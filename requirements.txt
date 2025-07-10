@@ -1,0 +1,8 @@
+opencv-python
+numpy
+matplotlib
+tensorflow
+keras
+scikit-learn
+playsound
+pillow
