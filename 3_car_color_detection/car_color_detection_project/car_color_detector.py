@@ -71,3 +71,14 @@ result_label = tk.Label(window, text="", font=("Arial", 14))
 result_label.pack(pady=10)
 
 window.mainloop()
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Replace these with your actual variables if named differently
+# Example: y_test = actual labels, y_pred = predicted labels
+
+print("✅ Model Evaluation Results:")
+print("🔹 Accuracy:", accuracy_score(y_test, y_pred))
+print("🔹 Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+print("🔹 Classification Report:\n", classification_report(y_test, y_pred))
+print("y_test exists:", 'y_test' in locals())
+print("y_pred exists:", 'y_pred' in locals())
